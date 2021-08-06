@@ -6,6 +6,19 @@ from timeit import default_timer as timer
 import math
 
 def evaluate_test_cases(fun_name, test_list):
+    '''
+    Evaluates all test cases
+    
+    Parameters:
+        fun_name: Name of function for evaluating test cases.
+        test_list: List of all test cases to be evaluated.
+        
+    test case format in test_list:
+        {"input":{"arg1": --, "arg2": --, and so on},
+         "output":}
+        
+        If multiple output to be tested then, provide all outputs to in list. Only one of them should be expected output
+    '''
     
     counter = 0
     
